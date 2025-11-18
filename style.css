@@ -1,18 +1,44 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    background: #f2f2f2;
+    background: #f9f9f9;
     color: #333;
 }
 
+/* Header / Hero */
 header {
-    text-align: center;
-    padding: 80px 20px;
     background: #222;
     color: white;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-header .btn {
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00aaff;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+.intro p {
+    margin: 10px 0 20px 0;
+    font-size: 1.1em;
+}
+
+.btn {
     background: #00aaff;
     padding: 10px 20px;
     color: white;
@@ -20,8 +46,9 @@ header .btn {
     text-decoration: none;
 }
 
+/* Section Styles */
 section {
-    padding: 40px 20px;
+    padding: 50px 20px;
     max-width: 900px;
     margin: auto;
 }
@@ -29,17 +56,46 @@ section {
 h2 {
     border-left: 5px solid #00aaff;
     padding-left: 10px;
+    margin-bottom: 20px;
 }
 
+/* Skills */
+#skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Projects */
 .project {
     background: white;
     padding: 15px;
-    margin: 10px 0;
+    margin: 15px 0;
     border-left: 5px solid #00aaff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.project a {
+    text-decoration: none;
+    color: #00aaff;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: #222;
     color: white;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .intro {
+        text-align: left;
+    }
 }
