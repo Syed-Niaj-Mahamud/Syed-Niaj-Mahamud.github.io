@@ -3,66 +3,431 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Niaj Mahamud | Portfolio</title>
+    <title>Syed Niaj Mahamud | Electronics & Telecommunication Engineer</title>
+    <meta name="description" content="Portfolio of Syed Niaj Mahamud - Electronics and Telecommunication Engineering student specializing in ML and VLSI">
+    <meta name="keywords" content="Electronics Engineer, CUET, VLSI, Machine Learning, C++, Python, MATLAB">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Syed<span>Niaj</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-<header>
-    <h1>Syed Niaj Mahamud</h1>
-    <p>Electronics & Telecommunication Engineering | ML Enthusiast | Web Developer</p>
-    <a href="#contact" class="btn">Contact Me</a>
-</header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3 class="greeting">Hello, I'm</h3>
+                    <h1 class="name">Syed Niaj Mahamud</h1>
+                    <h2 class="title">Electronics & Telecommunication Engineer</h2>
+                    <p class="subtitle">Specializing in <span class="highlight">Machine Learning</span> & <span class="highlight">VLSI Design</span></p>
+                    <p class="description">CUET undergraduate passionate about innovative electronics solutions, circuit design, and emerging technologies.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        <a href="assets/docs/CV.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="assets/images/profile.jpg" alt="Syed Niaj Mahamud" class="profile-img">
+                        <div class="image-border"></div>
+                        <div class="floating-elements">
+                            <div class="floating-element cpp"><i class="fab fa-cuttlefish"></i> C++</div>
+                            <div class="floating-element python"><i class="fab fa-python"></i> Python</div>
+                            <div class="floating-element matlab">MATLAB</div>
+                            <div class="floating-element circuit"><i class="fas fa-microchip"></i> VLSI</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a 3rd-year ETE student at CUET. I am passionate about 
-        Machine Learning, VLSI and Embedded Systems. 
-        I have built several projects, including an interactive news portal, 
-        digital communication lab systems, and electronics prototypes.
-    </p>
-</section>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Electronics & Telecommunication Engineering Student</h3>
+                    <p>I'm currently pursuing my Bachelor's degree at Chittagong University of Engineering and Technology (CUET), with an expected graduation in 2027. My academic journey has fueled my passion for electronics, telecommunication systems, and cutting-edge technologies.</p>
+                    <p>My primary interests lie in <strong>Machine Learning applications in electronics</strong> and <strong>VLSI design</strong>. I believe in combining theoretical knowledge with practical implementation to create innovative solutions.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Sc. in Electronics & Telecommunication Engineering</p>
+                                <p class="detail-sub">CUET | Expected 2027</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chittagong, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>syedniajmahamud@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+880 1821 435671</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>2+</h3>
+                        <p>Academic Projects</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>3+</h3>
+                        <p>Programming Languages</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>5+</h3>
+                        <p>Technical Tools</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2027</h3>
+                        <p>Graduation Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Machine Learning (Python, Jupyter, NumPy, Pandas)</li>
-        <li>Electronics (Analog, Digital, PCB, Arduino, Sensors)</li>
-        <li>Web Development (HTML, CSS, PHP, MySQL)</li>
-        <li>C, C++, OOP, MATLAB</li>
-    </ul>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C++</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MATLAB</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<section id="projects">
-    <h2>Projects</h2>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Electronics Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Proteus</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PLC Programming</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Circuit Design</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="project">
-        <h3>Interactive News Portal Website</h3>
-        <p>A complete web app with categories, dynamic content, and admin panel.</p>
-        <a href="https://github.com/yourusername/news-portal" target="_blank">View Code</a>
-    </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Technical Knowledge</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Digital Logic Design</span>
+                        <span class="skill-tag">Control Systems</span>
+                        <span class="skill-tag">Signal Processing</span>
+                        <span class="skill-tag">Analog Communication</span>
+                        <span class="skill-tag">Electromagnetic Waves</span>
+                        <span class="skill-tag">Circuit Analysis</span>
+                        <span class="skill-tag">Object-Oriented Programming</span>
+                        <span class="skill-tag">VLSI Design</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project">
-        <h3>FSK Digital Modulation</h3>
-        <p>ASK, FSK, PSK, QPSK, QAM — implemented using physical kits and simulation.</p>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Academic Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Digital Logic Design Project</h3>
+                        <p class="project-description">Designed and implemented IC fault sequential circuits using logic gates. This project involved creating robust digital circuits with error detection capabilities.</p>
+                        <div class="project-tech">
+                            <span>Proteus</span>
+                            <span>Logic Gates</span>
+                            <span>Digital Circuits</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/digital-logic.html" class="project-link">View Details</a>
+                            <a href="#" class="project-link disabled">Code (Private)</a>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="project">
-        <h3>Electronics Projects</h3>
-        <p>IC fault detector.</p>
-    </div>
-</section>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>PLC-Based Logic Gate Implementation</h3>
+                        <p class="project-description">Programmed a PLC to simulate digital logic circuits, demonstrating industrial automation applications of digital logic principles.</p>
+                        <div class="project-tech">
+                            <span>PLC</span>
+                            <span>Ladder Logic</span>
+                            <span>Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/plc-project.html" class="project-link">View Details</a>
+                            <a href="#" class="project-link disabled">Code (Private)</a>
+                        </div>
+                    </div>
+                </div>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: syedniajmahamud@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/Syed-Niaj-Mahamud" target="_blank">github.com/Syed-Niaj-Mahamud</a></p>
-</section>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Future Project: ML for Signal Processing</h3>
+                        <p class="project-description">Planning to implement machine learning algorithms for efficient signal processing in telecommunication systems.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Signal Processing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link disabled">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2025 Syed Niaj Mahamud | CUET</p>
-</footer>
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">Education & Coursework</h2>
+            <div class="education-content">
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - 2027</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science</h3>
+                            <h4>Electronics and Telecommunication Engineering</h4>
+                            <p class="institution">Chittagong University of Engineering and Technology (CUET)</p>
+                            <p class="status">Expected Graduation: 2027</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="coursework">
+                    <h3>Relevant Coursework</h3>
+                    <div class="course-grid">
+                        <div class="course-card">
+                            <h4>Digital Logic Design</h4>
+                            <p>Logic gates, sequential circuits, Karnaugh maps, IC design</p>
+                        </div>
+                        <div class="course-card">
+                            <h4>Control System Engineering</h4>
+                            <p>Time response, stability analysis, PID controllers</p>
+                        </div>
+                        <div class="course-card">
+                            <h4>Analog & Communication</h4>
+                            <p>Modulation techniques, signal processing, amplifiers</p>
+                        </div>
+                        <div class="course-card">
+                            <h4>Electromagnetic Field</h4>
+                            <p>Maxwell's equations, wave propagation, transmission lines</p>
+                        </div>
+                        <div class="course-card">
+                            <h4>Object-Oriented Programming</h4>
+                            <p>C++ programming, OOP concepts, data structures</p>
+                        </div>
+                        <div class="course-card">
+                            <h4>Circuit Theory</h4>
+                            <p>Network analysis, theorems, AC/DC circuits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>syedniajmahamud@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+880 1821 435671</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Chittagong, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Syed-Niaj-Mahamud" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                        <a href="mailto:syedniajmahamud@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Syed<span>Niaj</span></a>
+                    <p>Electronics & Telecommunication Engineering Student</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Syed Niaj Mahamud. All rights reserved.</p>
+                    <p>Built with HTML, CSS & JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
