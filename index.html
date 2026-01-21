@@ -1,31 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Niaj Mahamud | Electronics & Telecommunication Engineer</title>
-    <meta name="description" content="Portfolio of Syed Niaj Mahamud - Electronics and Telecommunication Engineering student specializing in ML and VLSI">
-    <meta name="keywords" content="Electronics Engineer, CUET, VLSI, Machine Learning, C++, Python, MATLAB">
-    <link rel="stylesheet" href="style.css">
+    <title>Syed Niaj Mahamud | Electronics Engineer & Innovator</title>
+    <meta name="description" content="Syed Niaj Mahamud - Electronics & Telecommunication Engineering student at CUET, specializing in VLSI, Machine Learning, and circuit design.">
+    <meta name="keywords" content="Electronics Engineer, VLSI, Machine Learning, CUET, C++, Python, MATLAB, Circuit Design">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Particles Background -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circuit-line"></div>
+            <div class="circuit-line"></div>
+            <div class="circuit-line"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Floating Elements -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Syed<span>Niaj</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-brand">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <span class="logo-text">Syed<span class="logo-highlight">Niaj</span></span>
+                </div>
+                <div class="tagline">Electronics Engineer</div>
+            </div>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="#timeline" class="nav-link"><i class="fas fa-graduation-cap"></i> Journey</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="assets/docs/Syed-CV.pdf" download class="btn btn-cv">
+                        <i class="fas fa-download"></i> CV
+                    </a>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </div>
     </nav>
@@ -33,99 +91,214 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h3 class="greeting">Hello, I'm</h3>
-                    <h1 class="name">Syed Niaj Mahamud</h1>
-                    <h2 class="title">Electronics & Telecommunication Engineer</h2>
-                    <p class="subtitle">Specializing in <span class="highlight">Machine Learning</span> & <span class="highlight">VLSI Design</span></p>
-                    <p class="description">CUET undergraduate passionate about innovative electronics solutions, circuit design, and emerging technologies.</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#projects" class="btn btn-secondary">View Projects</a>
-                        <a href="assets/docs/CV.pdf" class="btn btn-outline" download>
-                            <i class="fas fa-download"></i> Download CV
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-text">Electronics Engineer</span>
+                        <div class="badge-dot"></div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">Innovating with</span>
+                        <span class="title-highlight">Circuits</span>
+                        <span class="title-line">&</span>
+                        <span class="title-highlight">Code</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        I'm <span class="highlight-name">Syed Niaj Mahamud</span>, an Electronics & Telecommunication Engineering student at CUET, passionate about VLSI design, machine learning applications, and creating innovative electronic solutions.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Languages</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Tools</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2027</h3>
+                            <p>Graduation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View Projects
+                            <div class="btn-glow"></div>
                         </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
+                        <div class="social-hero">
+                            <a href="https://github.com/Syed-Niaj-Mahamud" class="social-icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-icon" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:syedniajmahamud@gmail.com" class="social-icon">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="assets/images/profile.jpg" alt="Syed Niaj Mahamud" class="profile-img">
-                        <div class="image-border"></div>
-                        <div class="floating-elements">
-                            <div class="floating-element cpp"><i class="fab fa-cuttlefish"></i> C++</div>
-                            <div class="floating-element python"><i class="fab fa-python"></i> Python</div>
-                            <div class="floating-element matlab">MATLAB</div>
-                            <div class="floating-element circuit"><i class="fas fa-microchip"></i> VLSI</div>
+                
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="profile-image">
+                                    <img src="assets/images/profile.jpg" alt="Syed Niaj Mahamud" id="profileImg">
+                                    <div class="image-glow"></div>
+                                    <div class="status-indicator">
+                                        <div class="status-dot"></div>
+                                        <span>Available</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="profile-info">
+                                    <h3>Syed Niaj Mahamud</h3>
+                                    <p>Electronics Engineer</p>
+                                    <div class="location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Chittagong, Bangladesh
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-stack">
+                                    <div class="tech-icon" data-tooltip="C++">
+                                        <i class="fas fa-c"></i>
+                                    </div>
+                                    <div class="tech-icon" data-tooltip="Python">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="tech-icon" data-tooltip="MATLAB">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="tech-icon" data-tooltip="Circuit Design">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <div class="tech-icon" data-tooltip="VLSI">
+                                        <i class="fas fa-microchip"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-tech">
+                        <div class="tech-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Digital Design</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-wave-square"></i>
+                            <span>Signal Processing</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-robot"></i>
+                            <span>ML Integration</span>
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="scroll-indicator">
-                <a href="#about">
-                    <i class="fas fa-chevron-down"></i>
+                <a href="#about" class="scroll-down">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <span>Scroll Down</span>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Electronics & Telecommunication Engineering Student</h3>
-                    <p>I'm currently pursuing my Bachelor's degree at Chittagong University of Engineering and Technology (CUET), with an expected graduation in 2027. My academic journey has fueled my passion for electronics, telecommunication systems, and cutting-edge technologies.</p>
-                    <p>My primary interests lie in <strong>Machine Learning applications in electronics</strong> and <strong>VLSI design</strong>. I believe in combining theoretical knowledge with practical implementation to create innovative solutions.</p>
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Education</h4>
-                                <p>B.Sc. in Electronics & Telecommunication Engineering</p>
-                                <p class="detail-sub">CUET | Expected 2027</p>
+            <div class="section-header">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Engineering Innovation <span class="text-gradient">With Purpose</span></h2>
+                <p class="section-subtitle">Bridging theoretical knowledge with practical applications in electronics and telecommunication</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">
+                            Currently pursuing <strong>Electronics and Telecommunication Engineering</strong> at <strong>Chittagong University of Engineering and Technology (CUET)</strong>, I'm driven by the potential of technology to solve real-world problems.
+                        </p>
+                        
+                        <div class="about-details">
+                            <div class="detail">
+                                <h3><i class="fas fa-bullseye"></i> My Mission</h3>
+                                <p>To develop efficient, innovative electronic solutions that bridge the gap between theoretical concepts and practical applications, particularly in VLSI design and machine learning integration.</p>
+                            </div>
+                            
+                            <div class="detail">
+                                <h3><i class="fas fa-lightbulb"></i> Interests</h3>
+                                <div class="interests">
+                                    <span class="interest-tag">VLSI Design</span>
+                                    <span class="interest-tag">Machine Learning</span>
+                                    <span class="interest-tag">Circuit Analysis</span>
+                                    <span class="interest-tag">Signal Processing</span>
+                                    <span class="interest-tag">Embedded Systems</span>
+                                    <span class="interest-tag">IoT Development</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Chittagong, Bangladesh</p>
+                        
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>syedniajmahamud@gmail.com</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>syedniajmahamud@gmail.com</p>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+880 1821 435671</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+880 1821 435671</p>
+                            <div class="info-item">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>CUET | Expected 2027</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <h3>2+</h3>
-                        <p>Academic Projects</p>
+                
+                <div class="about-visual">
+                    <div class="circuit-board">
+                        <div class="circuit-node node-1"></div>
+                        <div class="circuit-node node-2"></div>
+                        <div class="circuit-node node-3"></div>
+                        <div class="circuit-line line-1"></div>
+                        <div class="circuit-line line-2"></div>
+                        <div class="circuit-line line-3"></div>
                     </div>
-                    <div class="stat-card">
-                        <h3>3+</h3>
-                        <p>Programming Languages</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>5+</h3>
-                        <p>Technical Tools</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>2027</h3>
-                        <p>Graduation Year</p>
+                    <div class="floating-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Current Focus</h3>
+                        <ul>
+                            <li>Advanced Circuit Design</li>
+                            <li>ML Algorithms for Signal Processing</li>
+                            <li>VLSI Layout Optimization</li>
+                            <li>PLC & Industrial Automation</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -133,12 +306,20 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills">
+    <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
+            <div class="section-header">
+                <span class="section-label">Technical Expertise</span>
+                <h2 class="section-title">Skills & <span class="text-gradient">Proficiency</span></h2>
+                <p class="section-subtitle">Mastering the tools and technologies that power innovation</p>
+            </div>
+            
+            <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-info">
@@ -146,16 +327,16 @@
                                 <span>85%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                                <div class="skill-progress" style="width: 85%" data-width="85"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span>Python</span>
-                                <span>70%</span>
+                                <span>75%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
+                                <div class="skill-progress" style="width: 75%" data-width="75"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -164,176 +345,263 @@
                                 <span>80%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                                <div class="skill-progress" style="width: 80%" data-width="80"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Electronics Tools</h3>
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Engineering Tools</h3>
+                    </div>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span>Proteus</span>
-                                <span>75%</span>
+                                <span>80%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
+                                <div class="skill-progress" style="width: 80%" data-width="80"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span>PLC Programming</span>
-                                <span>70%</span>
+                                <span>75%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
+                                <div class="skill-progress" style="width: 75%" data-width="75"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span>Circuit Design</span>
-                                <span>80%</span>
+                                <span>85%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                                <div class="skill-progress" style="width: 85%" data-width="85"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Technical Knowledge</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Digital Logic Design</span>
-                        <span class="skill-tag">Control Systems</span>
-                        <span class="skill-tag">Signal Processing</span>
-                        <span class="skill-tag">Analog Communication</span>
-                        <span class="skill-tag">Electromagnetic Waves</span>
-                        <span class="skill-tag">Circuit Analysis</span>
-                        <span class="skill-tag">Object-Oriented Programming</span>
-                        <span class="skill-tag">VLSI Design</span>
-                        <span class="skill-tag">Machine Learning</span>
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Specializations</h3>
                     </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-microchip"></i> VLSI Design</span>
+                        <span class="skill-tag"><i class="fas fa-wave-square"></i> Signal Processing</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> Digital Logic</span>
+                        <span class="skill-tag"><i class="fas fa-cogs"></i> Control Systems</span>
+                        <span class="skill-tag"><i class="fas fa-broadcast-tower"></i> Communication</span>
+                        <span class="skill-tag"><i class="fas fa-robot"></i> Machine Learning</span>
+                        <span class="skill-tag"><i class="fas fa-bolt"></i> Circuit Analysis</span>
+                        <span class="skill-tag"><i class="fas fa-industry"></i> Automation</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-visual">
+                <div class="radar-chart">
+                    <canvas id="skillsRadar"></canvas>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Academic Projects</h2>
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                <p class="section-subtitle">Practical implementations of engineering concepts and problem-solving</p>
+            </div>
+            
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
+                    <div class="project-header">
                         <div class="project-icon">
                             <i class="fas fa-microchip"></i>
                         </div>
+                        <div class="project-badge">Academic</div>
                     </div>
                     <div class="project-content">
-                        <h3>Digital Logic Design Project</h3>
-                        <p class="project-description">Designed and implemented IC fault sequential circuits using logic gates. This project involved creating robust digital circuits with error detection capabilities.</p>
+                        <h3>IC Fault Sequential Circuit</h3>
+                        <p class="project-description">
+                            Designed and implemented fault-tolerant sequential circuits using logic gates with integrated error detection mechanisms for reliable digital systems.
+                        </p>
                         <div class="project-tech">
-                            <span>Proteus</span>
-                            <span>Logic Gates</span>
-                            <span>Digital Circuits</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/digital-logic.html" class="project-link">View Details</a>
-                            <a href="#" class="project-link disabled">Code (Private)</a>
+                            <span class="tech-tag">Proteus</span>
+                            <span class="tech-tag">Logic Gates</span>
+                            <span class="tech-tag">Digital Circuits</span>
+                            <span class="tech-tag">Error Detection</span>
                         </div>
                     </div>
+                    <div class="project-footer">
+                        <a href="projects/digital-logic.html" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Details
+                        </a>
+                        <div class="project-stats">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-code-branch"></i> Academic</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
                 </div>
-
+                
                 <div class="project-card">
-                    <div class="project-image">
+                    <div class="project-header">
                         <div class="project-icon">
                             <i class="fas fa-industry"></i>
                         </div>
+                        <div class="project-badge">Automation</div>
                     </div>
                     <div class="project-content">
-                        <h3>PLC-Based Logic Gate Implementation</h3>
-                        <p class="project-description">Programmed a PLC to simulate digital logic circuits, demonstrating industrial automation applications of digital logic principles.</p>
+                        <h3>PLC Logic Gate Simulation</h3>
+                        <p class="project-description">
+                            Programmed Programmable Logic Controllers to simulate complex digital logic circuits, demonstrating industrial automation applications.
+                        </p>
                         <div class="project-tech">
-                            <span>PLC</span>
-                            <span>Ladder Logic</span>
-                            <span>Automation</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="projects/plc-project.html" class="project-link">View Details</a>
-                            <a href="#" class="project-link disabled">Code (Private)</a>
+                            <span class="tech-tag">PLC</span>
+                            <span class="tech-tag">Ladder Logic</span>
+                            <span class="tech-tag">Automation</span>
+                            <span class="tech-tag">Industrial Control</span>
                         </div>
                     </div>
+                    <div class="project-footer">
+                        <a href="projects/plc-project.html" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Details
+                        </a>
+                        <div class="project-stats">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-code-branch"></i> Academic</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
                 </div>
-
+                
                 <div class="project-card">
-                    <div class="project-image">
+                    <div class="project-header">
                         <div class="project-icon">
-                            <i class="fas fa-rocket"></i>
+                            <i class="fas fa-brain"></i>
                         </div>
+                        <div class="project-badge">Future Project</div>
                     </div>
                     <div class="project-content">
-                        <h3>Future Project: ML for Signal Processing</h3>
-                        <p class="project-description">Planning to implement machine learning algorithms for efficient signal processing in telecommunication systems.</p>
+                        <h3>ML for Signal Analysis</h3>
+                        <p class="project-description">
+                            Developing machine learning algorithms for efficient signal processing and analysis in telecommunication systems.
+                        </p>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>Signal Processing</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link disabled">Coming Soon</a>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Signal Processing</span>
+                            <span class="tech-tag">ML Algorithms</span>
                         </div>
                     </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link disabled">
+                            <i class="fas fa-clock"></i> Coming Soon
+                        </a>
+                        <div class="project-stats">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-code-branch"></i> Research</span>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
                 </div>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="#" class="btn btn-ghost">
+                    <i class="fas fa-plus"></i> View All Projects
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section education">
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
         <div class="container">
-            <h2 class="section-title">Education & Coursework</h2>
-            <div class="education-content">
-                <div class="education-timeline">
-                    <div class="timeline-item">
+            <div class="section-header">
+                <span class="section-label">My Journey</span>
+                <h2 class="section-title">Academic & <span class="text-gradient">Career Path</span></h2>
+                <p class="section-subtitle">The roadmap of my engineering education and skill development</p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
                         <div class="timeline-date">2023 - 2027</div>
-                        <div class="timeline-content">
-                            <h3>Bachelor of Science</h3>
-                            <h4>Electronics and Telecommunication Engineering</h4>
-                            <p class="institution">Chittagong University of Engineering and Technology (CUET)</p>
-                            <p class="status">Expected Graduation: 2027</p>
+                        <h3>B.Sc. in Electronics & Telecommunication Engineering</h3>
+                        <h4>Chittagong University of Engineering & Technology (CUET)</h4>
+                        <p>Currently pursuing undergraduate studies with focus on circuit design, signal processing, and emerging technologies.</p>
+                        <div class="timeline-tags">
+                            <span>CGPA: 3.5+</span>
+                            <span>Expected Graduation: 2027</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="coursework">
-                    <h3>Relevant Coursework</h3>
-                    <div class="course-grid">
-                        <div class="course-card">
-                            <h4>Digital Logic Design</h4>
-                            <p>Logic gates, sequential circuits, Karnaugh maps, IC design</p>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>Academic Projects</h3>
+                        <h4>Digital Logic & PLC Implementation</h4>
+                        <p>Successfully completed multiple academic projects including IC fault detection circuits and PLC-based automation systems.</p>
+                        <div class="timeline-tags">
+                            <span>Proteus</span>
+                            <span>PLC Programming</span>
+                            <span>Circuit Design</span>
                         </div>
-                        <div class="course-card">
-                            <h4>Control System Engineering</h4>
-                            <p>Time response, stability analysis, PID controllers</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>Skill Development</h3>
+                        <h4>Programming & Tools Mastery</h4>
+                        <p>Developed proficiency in C++, Python, MATLAB, and various engineering tools through coursework and self-study.</p>
+                        <div class="timeline-tags">
+                            <span>C++</span>
+                            <span>Python</span>
+                            <span>MATLAB</span>
+                            <span>Proteus</span>
                         </div>
-                        <div class="course-card">
-                            <h4>Analog & Communication</h4>
-                            <p>Modulation techniques, signal processing, amplifiers</p>
-                        </div>
-                        <div class="course-card">
-                            <h4>Electromagnetic Field</h4>
-                            <p>Maxwell's equations, wave propagation, transmission lines</p>
-                        </div>
-                        <div class="course-card">
-                            <h4>Object-Oriented Programming</h4>
-                            <p>C++ programming, OOP concepts, data structures</p>
-                        </div>
-                        <div class="course-card">
-                            <h4>Circuit Theory</h4>
-                            <p>Network analysis, theorems, AC/DC circuits</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 & Beyond</div>
+                        <h3>Future Goals</h3>
+                        <h4>Advanced Studies & Specialization</h4>
+                        <p>Planning to pursue specialization in VLSI design and machine learning applications in electronics.</p>
+                        <div class="timeline-tags">
+                            <span>VLSI Design</span>
+                            <span>Machine Learning</span>
+                            <span>Research</span>
+                            <span>Innovation</span>
                         </div>
                     </div>
                 </div>
@@ -342,63 +610,104 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+                <p class="section-subtitle">Have a project in mind or want to discuss technology? I'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>syedniajmahamud@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+880 1821 435671</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Chittagong, Bangladesh</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/Syed-Niaj-Mahamud" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" target="_blank" class="social-link">
-                            <i class="fab fa-researchgate"></i>
-                        </a>
-                        <a href="mailto:syedniajmahamud@gmail.com" class="social-link">
+                    <div class="contact-card">
+                        <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
-                        </a>
+                        </div>
+                        <h3>Email</h3>
+                        <p>syedniajmahamud@gmail.com</p>
+                        <a href="mailto:syedniajmahamud@gmail.com" class="contact-link">Send Message <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+880 1821 435671</p>
+                        <a href="tel:+8801821435671" class="contact-link">Call Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Chittagong, Bangladesh</p>
+                        <a href="https://maps.google.com/?q=Chittagong+Bangladesh" class="contact-link" target="_blank">View on Map <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/Syed-Niaj-Mahamud" class="social-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-btn" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-btn" target="_blank">
+                                <i class="fab fa-researchgate"></i>
+                                <span>ResearchGate</span>
+                            </a>
+                            <a href="#" class="social-btn" target="_blank">
+                                <i class="fab fa-hackerrank"></i>
+                                <span>HackerRank</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="contact-form">
                     <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                        <div class="form-header">
+                            <h3><i class="fas fa-paper-plane"></i> Send a Message</h3>
+                            <p>I'll respond within 24 hours</p>
                         </div>
+                        
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
                         </div>
+                        
                         <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
                         </div>
+                        
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <div class="input-with-icon">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" placeholder="Subject" required>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-edit"></i>
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
                             <i class="fas fa-paper-plane"></i> Send Message
+                            <div class="btn-glow"></div>
                         </button>
                     </form>
                 </div>
@@ -410,24 +719,57 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#" class="logo">Syed<span>Niaj</span></a>
-                    <p>Electronics & Telecommunication Engineering Student</p>
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <span class="logo-text">Syed<span class="logo-highlight">Niaj</span></span>
+                    </div>
+                    <p class="footer-tagline">Engineering tomorrow's technology, today.</p>
                 </div>
+                
                 <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <div class="link-group">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="assets/docs/Syed-CV.pdf" download>Download CV</a>
+                        <a href="#">Academic Papers</a>
+                        <a href="#">Project Code</a>
+                        <a href="#">Learning Resources</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
                 </div>
-                <div class="footer-copyright">
-                    <p>&copy; 2024 Syed Niaj Mahamud. All rights reserved.</p>
-                    <p>Built with HTML, CSS & JavaScript</p>
-                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Syed Niaj Mahamud. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart" style="color: #ff4757;"></i> and <i class="fas fa-code" style="color: #2563eb;"></i></p>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
